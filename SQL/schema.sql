@@ -44,10 +44,8 @@ CREATE TABLE ecommerce_sales_fact (
     FOREIGN KEY (seller_id) REFERENCES ecommerce_sellers(seller_id)
 );
 
--- ==============================================
 -- Summary / Analysis Tables
--- (Optional - can be materialized views instead)
--- ==============================================
+
 
 -- Monthly Sales Summary
 CREATE TABLE ecommerce_monthly_sales (
